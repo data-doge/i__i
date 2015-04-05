@@ -1,5 +1,4 @@
 function startHickoryCountdown () {
-
   var hickoryCountdown = setInterval(function () {
     showerTime();
     setTimeout(function() {
@@ -7,7 +6,6 @@ function startHickoryCountdown () {
     }, Math.random() * 420);
     $('h1').text(getRandomThought());
   }, 10000);
-
 }
 
 var thoughts = [
