@@ -6,31 +6,31 @@ $(document).ready(function() {
 
   var pounder = setInterval(function () {
 
-    if (i < 5) {
+    if (i < 1) {
       direction = 'down';
     }
 
-    if (i > 45) {
+    if (i > 50) {
       direction = 'up';
     }
 
     if (direction === 'down') {
-      i += 20;
+      i += 10
     } else if (direction === 'up') {
-      i -= 3;
+      i -= 1;
     }
 
     $columns.css({
       'top' : i + '%'
     });
 
-  }, 35);
+  }, 10);
 
   var j = 0;
-  $body = $('body');
+  $typical = $('#typical');
 
   var rotator = setInterval(function () {
-    $body.css({
+    $typical.css({
       '-webkit-transform' : 'rotate(' + j + 'deg)'
     })
     if (j < 360) {
@@ -39,6 +39,5 @@ $(document).ready(function() {
       j = 0;
     }
   }, 10);
-
 
 });
