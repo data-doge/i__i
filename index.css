@@ -1,0 +1,22 @@
+html, body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+div {
+  position: absolute;
+  font-size: 300px;
+}
+
+#left {
+  left: 10px;
+}
+
+#right {
+  right: 10px;
+}
+
+#main {
+
+}
