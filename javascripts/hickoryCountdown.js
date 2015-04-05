@@ -45,7 +45,7 @@ function getRandomThought () {
 }
 
 function showerTime () {
-  // $('#static')[0].play();
+  $('#static')[0].play();
   $('#typical').hide();
   $('#atypical').show();
 }
@@ -53,5 +53,5 @@ function showerTime () {
 function screamHickory () {
   $('#atypical').hide();
   $('#typical').show();
-  // $('#static')[0].pause();
+  $('#static')[0].pause();
 }
