@@ -2,7 +2,7 @@ html, body { position: relative; height: 100%; }
 body { width: 700px; margin: 0 auto; text-align: center; }
 
 .centered { position: relative; top: 50%; transform: translateY(-50%); margin: 0 auto; }
-.column { position: absolute; font-size: 400px; height: 100%; width: 20%; background-image: url('./static.gif'); background-size: 200%;
+.column { position: absolute; font-size: 400px; height: 100%; width: 20%; background-image: url('./../media/static.gif'); background-size: 200%;
   -webkit-text-fill-color: transparent; -webkit-background-clip: text; }
 
 #typical { position: absolute; width: 100%; height: 100%; }
