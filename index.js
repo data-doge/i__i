@@ -40,4 +40,15 @@ $(document).ready(function() {
     }
   }, 10);
 
+  var static = $('#static')[0];
+
+  var hickoryCountdown = setInterval(function () {
+
+    static.play();
+    setTimeout(function() {
+      static.pause();
+    },500)
+
+  }, 5000)
+
 });
