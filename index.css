@@ -1,72 +1,16 @@
-html, body {
-  position: relative;
-  height: 100%;
-}
+html, body { position: relative; height: 100%; }
+body { width: 700px; margin: 0 auto; text-align: center; }
 
-body {
-  width: 700px;
-  margin: 0 auto;
-}
+.centered { position: relative; top: 50%; transform: translateY(-50%); margin: 0 auto; }
+.column { position: absolute; font-size: 400px; height: 100%; width: 20%; background-image: url('./static.gif'); background-size: 200%;
+  -webkit-text-fill-color: transparent; -webkit-background-clip: text; }
 
-#typical {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
+#typical { position: absolute; width: 100%; height: 100%; }
+#atypical { position: absolute; height: 100%; width: 100%; background: black; color: white; font-size: 150px; display: none; }
 
-.column {
-  position: absolute;
-  text-align: center;
-  font-size: 400px;
-  height: 100%;
-  width: 20%;
-  background-image: url('./static.gif');
-  background-size: 200%;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
+#left { left: 0; }
+#right { right: 0; }
 
-#left {
-  left: 0;
-}
+#main { width: 200px; height: 200px; border-radius: 100px; background: black; }
+h1 { font-size: 20px; color: white; font-family: 'Inconsolata'; }
 
-#right {
-  right: 0;
-}
-
-#main {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  background: black;
-  z-index: 0;
-}
-
-.centered {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 auto;
-}
-
-h1 {
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  font-family: 'Inconsolata';
-}
-
-audio {
-  display: none;
-}
-
-#atypical {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: black;
-  color: white;
-  font-size: 155px;
-  text-align: center;
-  display: none;
-}
