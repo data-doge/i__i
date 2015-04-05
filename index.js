@@ -10,23 +10,21 @@ $(document).ready(function() {
       direction = 'down';
     }
 
-    if (i > 75) {
+    if (i > 45) {
       direction = 'up';
     }
 
     if (direction === 'down') {
-      i += 3;
+      i += 20;
     } else if (direction === 'up') {
       i -= 3;
     }
 
-    console.log(i);
-
     $columns.css({
-      'padding-top' : i + '%'
+      'top' : i + '%'
     });
 
-  }, 15);
+  }, 35);
 
 
 });
