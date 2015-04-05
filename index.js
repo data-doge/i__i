@@ -1,32 +1,32 @@
 $(document).ready(function() {
 
-  var i = 0;
-  var $divs = $('div');
+  var i = 50;
+  var $columns = $('.column');
   var direction = 'down';
 
   var pounder = setInterval(function () {
 
-    if (i === 0) {
+    if (i < 5) {
       direction = 'down';
     }
 
-    if (i === 100) {
+    if (i > 75) {
       direction = 'up';
     }
 
     if (direction === 'down') {
-      i++;
+      i += 3;
     } else if (direction === 'up') {
-      i--;
+      i -= 3;
     }
 
     console.log(i);
 
-    $divs.css({
-      'top' : i + '%'
+    $columns.css({
+      'padding-top' : i + '%'
     });
 
-  }, 10);
+  }, 15);
 
 
 });
