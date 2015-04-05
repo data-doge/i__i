@@ -15,7 +15,7 @@ body {
   height: 100%;
   width: 20%;
   background-image: url('./static.gif');
-  background-size: 800%;
+  background-size: 200%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -29,14 +29,18 @@ body {
 }
 
 #main {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: black;
+  z-index: 0;
+}
+
+.centered {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   margin: 0 auto;
-  width: 250px;
-  height: 250px;
-  border-radius: 100%;
-  background: black;
 }
 
 audio {

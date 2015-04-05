@@ -26,5 +26,19 @@ $(document).ready(function() {
 
   }, 35);
 
+  var j = 0;
+  $body = $('body');
+
+  var rotator = setInterval(function () {
+    $body.css({
+      '-webkit-transform' : 'rotate(' + j + 'deg)'
+    })
+    if (j < 360) {
+      j++;
+    } else {
+      j = 0;
+    }
+  }, 10);
+
 
 });
