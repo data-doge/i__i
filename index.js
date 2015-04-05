@@ -41,14 +41,23 @@ $(document).ready(function() {
   }, 10);
 
   var static = $('#static')[0];
+  $typical = $('#typical');
+  $atypical = $('#atypical');
 
   var hickoryCountdown = setInterval(function () {
 
     static.play();
-    setTimeout(function() {
-      static.pause();
-    },500)
+    $typical.hide();
+    $atypical.show();
 
-  }, 5000)
+    setTimeout(function() {
+      $atypical.hide();
+      $typical.show();
+      static.pause();
+    }, Math.random() * 200);
+
+  }, 15000);
+
+
 
 });

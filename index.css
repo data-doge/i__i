@@ -58,3 +58,14 @@ h1 {
 audio {
   display: none;
 }
+
+#atypical {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: black;
+  color: white;
+  font-size: 155px;
+  text-align: center;
+  display: none;
+}
