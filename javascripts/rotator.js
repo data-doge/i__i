@@ -1,11 +1,10 @@
 function startRotating () {
 
   var j = 0;
-  $typical = $('#typical');
 
   var rotator = setInterval(function () {
 
-    $typical.css({
+    $('#typical').css({
       '-webkit-transform' : 'rotate(' + j + 'deg)'
     });
 
