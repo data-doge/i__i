@@ -6,17 +6,23 @@ html, body {
 
 div {
   position: absolute;
+  text-align: center;
   font-size: 300px;
+  width: 10%;
 }
 
 #left {
-  left: 10px;
+  left: 0;
 }
 
 #right {
-  right: 10px;
+  right: 0;
 }
 
 #main {
-
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  height: 100%;
 }
