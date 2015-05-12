@@ -1,4 +1,4 @@
-function startPounding () {
+function startPounding (time) {
   var i = 50;
   var direction = 'down';
   var pounder = setInterval(function () {
@@ -10,5 +10,5 @@ function startPounding () {
     }
     direction === 'down' ? i += 10 : i -= 1;
     $('.column').css('top', i + '%');
-  }, 10);
+  }, time);
 }
