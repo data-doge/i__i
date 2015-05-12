@@ -1,11 +1,11 @@
-function startHickoryCountdown () {
+function startHickoryCountdown (time) {
   var hickoryCountdown = setInterval(function () {
     showerTime();
     setTimeout(function() {
       screamHickory();
     }, Math.random() * 420);
     $('h1').text(getRandomThought());
-  }, 1000);
+  }, time);
 }
 
 var thoughts = [

@@ -1,5 +1,5 @@
-$(document).ready(function() {
+$(window).load(function() {
   startPounding();
   startRotating();
-  startHickoryCountdown();
+  startHickoryCountdown(10000);
 });
