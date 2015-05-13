@@ -1,5 +1,5 @@
 $(window).load(function() {
-  startPounding(10);
-  startRotating(10);
+  startPounding(12);
+  startRotating(20);
   startHickoryCountdown(10000);
 });

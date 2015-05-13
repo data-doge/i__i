@@ -8,37 +8,7 @@ function startHickoryCountdown (time) {
   }, time);
 }
 
-var thoughts = [
-  'am mechanical',
-  'am curved glass',
-  'am tip knitted',
-  'am cold air',
-  'am oily hair',
-  '-5 petrol stn',
-  'am somehow',
-  'am somewhere',
-  'am anywhere',
-  'don\'t care',
-  'love chemicals',
-  'for an',
-  'tell me',
-  'eat it quickly',
-  'see it why',
-  'think and think',
-  'say ok and',
-  'smell a salmon',
-  'love algorithms',
-  'want a cat',
-  'eat carpets',
-  'saw it twice',
-  'fed my cat rice',
-  'thought it was',
-  'consume the past',
-  'hope it lasts',
-  'can\'t imagine it',
-  'live quickly',
-  'love gold and'
-];
+var thoughts = ['am mechanical', 'am curved glass', 'am tip knitted', 'am cold air', 'am oily hair', 'don\'t care', 'tell me', 'see it why', 'think and think', 'saw it twice', 'thought it was', 'hope it lasts', 'can\'t imagine it'];
 
 function getRandomThought () {
   return thoughts[Math.floor(Math.random() * thoughts.length)];
